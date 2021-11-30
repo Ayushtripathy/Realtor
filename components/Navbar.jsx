@@ -29,7 +29,6 @@ const Navbar = () => {
             as={SiHomebridge}
             fontSize="2xl"
             cursor="pointer"
-            d={["none", "none", "none", "block"]}
           />
         </Flex>
       </Box>

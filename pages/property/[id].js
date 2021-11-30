@@ -36,7 +36,7 @@ const PropertyDetails = ({
             {isVerified && <GoVerified />}
           </Box>
           <Text fontWeight="bold" fontSize="lg">
-            AED {price} {rentFrequency && `/${rentFrequency}`}
+            INR {price} {rentFrequency && `/${rentFrequency}`}
           </Text>
           <Spacer />
           <Avatar size="sm" src={agency?.logo?.url}></Avatar>
@@ -101,7 +101,7 @@ const PropertyDetails = ({
       <Box>
         {amenities.length && (
           <Text fontSize="2xl" fontWeight="black" marginTop="5">
-            Facilites:
+            Facilities:
           </Text>
         )}
         <Flex flexWrap="wrap">
