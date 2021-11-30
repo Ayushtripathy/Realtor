@@ -8,18 +8,30 @@ import {
   Flex,
   Box,
   Spacer,
+  Icon,
 } from "@chakra-ui/react";
 import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
 import { BsSearch } from "react-icons/bs";
 import { FiKey } from "react-icons/fi";
+import { SiHomebridge } from "react-icons/si";
 
 const Navbar = () => {
   return (
     <Flex p="2" borderBottom="1px" borderColor="gray.100">
       <Box fontSize="3xl" color="blue.400" fontWeight="bold">
-        <Link href="/" paddingLeft="2">
-          Realtor
-        </Link>
+        <Flex p="2">
+          <Link href="/" paddingLeft="2" passHref>
+            Realtor
+          </Link>
+          <Icon
+            m="auto"
+            marginLeft="2"
+            as={SiHomebridge}
+            fontSize="2xl"
+            cursor="pointer"
+            d={["none", "none", "none", "block"]}
+          />
+        </Flex>
       </Box>
       <Spacer />
       <Box>
